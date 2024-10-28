@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchscategories } from "../../service/scategorieservice";
 import { Modal } from "react-bootstrap";
-import "./insertarticle.css";
+import "./Insertarticle.css"
 import axios from "axios";
 import { FilePond, registerPlugin } from "react-filepond";
 import "filepond/dist/filepond.min.css";
