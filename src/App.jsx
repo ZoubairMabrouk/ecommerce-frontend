@@ -31,6 +31,7 @@ function App() {
     
     <Router>
     <Routes>
+      <Route path='' element={<Menu/>}/>
     <Route path="/articles" element={<Listearticle/>}/>
     <Route path="/articlescard" element={<Listarticlescard/>}/>
 
