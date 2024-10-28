@@ -1,0 +1,181 @@
+/* Styling for the table container */
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table rows */
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Alternate row color */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #e6f7ff;
+}
+
+/* Hover effect */
+table tr:hover {
+    background-color: #d9f0ff;
+}
+
+/* Buttons styling */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-add {
+    background-color: #3cb038; /* Purple */
+    color: white;
+    border-radius: 2pc;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    float: right;
+    margin-right: 15px;
+}
+
+.btn-add:hover {
+    background-color: #0ee64b;
+}
+
+.btn-edit {
+    background-color: #1003ff; /* Purple */
+    color: white;
+    border-radius: 2pc;
+    height: 45px;
+    width: 100px;
+    justify-content: center;
+    
+}
+
+.btn-delete {
+    background-color: #ff0000; /* Red */
+    color: white;
+    border-radius: 2pc;
+    height: 45px;
+    width: 100px;
+    justify-content: center;
+    
+}
+.fa-solid {
+    margin-right: 8px; /* Space between icon and text */
+}
+.btn-search {
+    background-color: #3ba739; /* Red */
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #993399;
+}
+
+.btn-delete:hover {
+    background-color: #ff6666;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin: 15px 0;
+    float: right;
+    text-align: center;
+}
+
+.pagination button {
+    color: black;
+    
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+
+.pagination button.active {
+    background-color: #4006ef;
+    color: white;
+    border: 1px solid #000000;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Afficher (dropdown styling) */
+.limit-selector-container {
+    margin-top: 10px;
+    float: right;
+    
+}
+
+.limit-selector-container select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Header Menu */
+.header-menu {
+    background-color: #007bff;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.header-menu a {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-menu a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Image column styling */
+.image-column img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
