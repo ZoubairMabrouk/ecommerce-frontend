@@ -232,3 +232,18 @@ cursor: pointer;
     display: inline-block;
     font-size: 20px;
     }
+    
+.button-actions1{
+    background-color: #1808f7;
+    border: none;
+    width: 100%;
+    color: rgb(250, 249, 252);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    }
+    .titre{
+        text-align: center;
+        color: #1808f7;
+    }
