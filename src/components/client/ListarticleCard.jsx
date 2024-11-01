@@ -40,11 +40,11 @@ const Listarticlescard = () => {
     <Menu/>
       <div className="card-container">
         {articles.map((art, index) => (
-          <Card
-            imageart={art.imageart}
+          <Card key={index} article={art}
+            /*imageart={art.imageart}
             reference={art.reference}
             designation={art.designation}
-            prix={art.prix}
+            prix={art.prix}*/
           />
         ))}
       </div>

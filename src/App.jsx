@@ -11,6 +11,8 @@ import ListeScategorie from './components/scategories/ListeScategorie';
 import Listearticle from './components/articles/Listearticle';
 import Menu from './components/menu';
 import Listarticlescard from './components/client/ListarticleCard';
+import { CartProvider } from 'use-shopping-cart';
+import Cart from './components/client/shopping/Cart';
 /*
 import Insertarticle from './components/articles';
 import Insertcategorie from './components/categories';
@@ -28,7 +30,7 @@ import Viewscategorie from './components/scategories';
 function App() {
   return (
     <>
-    
+    <CartProvider>
     <Router>
     <Routes>
       <Route path='' element={<Menu/>}/>
@@ -38,9 +40,11 @@ function App() {
     <Route path="/categories" exact element={<Listecategorie/>}/>
     
     <Route path="/scategories" element={<ListeScategorie/>}/>
+    <Route path='/cart' element={<Cart/>}></Route>
     
     </Routes>
     </Router>
+    </CartProvider>
     </>
     )
     }
