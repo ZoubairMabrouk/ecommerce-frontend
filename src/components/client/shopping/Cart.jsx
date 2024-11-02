@@ -3,6 +3,7 @@ import { useShoppingCart } from "use-shopping-cart";
 import { Link } from "react-router-dom";
 import "./panier.css";
 import Menu from "../../menu";
+import axios from "../../../Api/axios";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   Elements,
@@ -45,8 +46,8 @@ const Cart = () => {
       console.log("[TOKEN]", token);
     }
     await axios
-      .post("/payment/processpayment", {
-        amount: computedTotalPrice,
+      .post("api/payment/processpayment", {
+        amount: computedTotalPrice * 100,
         token: token.id,
       })
       .then((res) => {
@@ -59,9 +60,7 @@ const Cart = () => {
   };
   const computedTotalPrice = Object.values(cartDetails)
     .reduce(
-      (acc, cartItem) => acc + parseFloat(cartItem.price) * cartItem.quantity,
-      0
-    )
+      (acc, cartItem) => acc + parseFloat(cartItem.price) * cartItem.quantity,0)
     .toFixed(2);
   return (
     <div className="cart-container">
